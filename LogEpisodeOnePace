@@ -1,13 +1,11 @@
 #!/bin/bash
 xdotool search --onlyvisible --class "firefox" windowactivate --sync   
 #tab bc website is wierd
-sleep 2
 xdotool key Tab
 
 #go back to Url and Copy content
 xdotool key --repeat 5 --delay 100 shift+Tab
 xdotool key ctrl+c
-sleep 2
 #load clipboard content in LogFile
 touch $HOME/.OnePaceLog
 xclip -o > $HOME/.OnePaceLog
