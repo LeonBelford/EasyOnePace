@@ -1,8 +1,8 @@
 #!/bin/bash
 Url=$(< $HOME/.OnePaceLog)
-firefox -new-tab "$Url"
-
-LogEpisodeOnePace
+firefox -new-tab "$Url" &
+sleep 6
+$HOME/EasyOnePace/LogEpisodeOnePace
 
 #tabs through all the wierd stuff on site to bypass popup
 xdotool key --repeat 16 --delay 100 Tab
