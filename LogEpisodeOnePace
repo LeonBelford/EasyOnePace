@@ -5,7 +5,7 @@ sleep 2
 xdotool key Tab
 
 #go back to Url and Copy content
-xdotool key --repeat 6 --delay 100 shift+Tab
+xdotool key --repeat 5 --delay 100 shift+Tab
 xdotool key ctrl+c
 sleep 2
 #load clipboard content in LogFile
@@ -13,4 +13,4 @@ touch $HOME/.OnePaceLog
 xclip -o > $HOME/.OnePaceLog
 
 #revert to initial reload position for staring the episode
-xdotool key --repeat 6 --delay 100 Tab
+xdotool key --repeat 5 --delay 100 Tab
