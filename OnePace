@@ -15,7 +15,7 @@ sleep 5
 
 #logs the episode
 #Custom script
-LogEpisodeOnePace
+$HOME/EasyOnePace/LogEpisodeOnePace
 
 #tabs through all the wierd stuff on site to bypass popup
 xdotool key --repeat 16 --delay 100 Tab
