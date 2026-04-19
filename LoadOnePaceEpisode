@@ -1,0 +1,16 @@
+#!/bin/bash
+Url=$(< $HOME/.OnePaceLog)
+firefox -new-tab "$Url"
+
+LogEpisodeOnePace
+
+#tabs through all the wierd stuff on site to bypass popup
+xdotool key --repeat 16 --delay 100 Tab
+
+#start the episode and skip Intro
+xdotool key Return
+sleep 2
+xdotool key f
+sleep 1
+xdotool key --repeat 30 --delay 100 Right
+xdotool mousemove 9000 0

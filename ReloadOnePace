@@ -1,0 +1,10 @@
+#!/bin/bash
+xdotool search --onlyvisible --class "firefox" windowactivate --sync   
+xdotool key Escape
+xdotool key F5
+sleep 6
+xdotool key --repeat 16 --delay 100 Tab
+xdotool key Return
+sleep 2
+xdotool key f
+xdotool mousemove 9000 0

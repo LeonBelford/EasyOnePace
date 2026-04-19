@@ -1,0 +1,15 @@
+#!/bin/bash
+xdotool search --onlyvisible --class "firefox" windowactivate --sync   
+#tab bc website is wierd
+xdotool key Tab
+
+#go back to Url and Copy content
+xdotool key --repeat 3 --delay 100 shift+Tab
+xdotool key ctrl+c
+
+#load clipboard content in LogFile
+touch $HOME/.OnePaceLog
+xclip -o > $HOME/.OnePaceLog
+
+#revert to initial reload position for staring the episode
+xdotool key --repeat 3 --delay 100 Tab
